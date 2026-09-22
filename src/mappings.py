@@ -86,6 +86,234 @@ ADMIN_UNIT_TO_OBLAST = {
 }
 
 
+# UCDP adm_1 → Standard oblast names
+# Source: UCDP GED v26.1 unique adm_1 values for Ukraine
+# Maps UCDP romanization variants to project-standard oblast names
+
+UCDP_ADM1_TO_OBLAST = {
+    # Standard matches (minor case/spelling normalization)
+    'Donetsk oblast': 'Donetsk Oblast',
+    'Kharkiv oblast': 'Kharkiv Oblast',
+    'Luhansk oblast': 'Luhansk Oblast',
+    'Kherson oblast': 'Kherson Oblast',
+    'Sumy oblast': 'Sumy Oblast',
+    'Dnipropetrovsk oblast': 'Dnipropetrovsk Oblast',
+    'Chernihiv oblast': 'Chernihiv Oblast',
+    'Kyiv oblast': 'Kyiv Oblast',
+    'Zhytomyr oblast': 'Zhytomyr Oblast',
+    'Poltava oblast': 'Poltava Oblast',
+    'Lviv oblast': 'Lviv Oblast',
+    'Cherkasy oblast': 'Cherkasy Oblast',
+    'Rivne oblast': 'Rivne Oblast',
+    'Khmelnytskyi oblast': 'Khmelnytskyi Oblast',
+    'Kirovohrad oblast': 'Kirovohrad Oblast',
+    'Volyn oblast': 'Volyn Oblast',
+    'Ivano-Frankivsk oblast': 'Ivano-Frankivsk Oblast',
+    'Ternopil oblast': 'Ternopil Oblast',
+    'Zakarpattia oblast': 'Zakarpattia Oblast',
+    'Chernivtsi oblast': 'Chernivtsi Oblast',
+    # Romanization variants
+    'Zaporizhzhya oblast': 'Zaporizhzhia Oblast',
+    'Odessa oblast': 'Odesa Oblast',
+    'Mykolayiv oblast': 'Mykolaiv Oblast',
+    'Vinnytsya oblast': 'Vinnytsia Oblast',
+    # Kyiv city variants
+    'Kyiv Special Republican city': 'Kyiv',
+    'Kiev Special Republican city': 'Kyiv',
+    # Crimea & Sevastopol
+    'Autonomous Republic of Crimea': 'AR Crimea',
+    'Sevastopol City State Administration': 'Sevastopol',
+}
+
+
+# UCDP adm_2 → Standard raion_nominatim_en names
+# Source: UCDP GED v26.1 unique adm_2 values for Ukraine
+# Maps UCDP romanization variants to project-standard raion names (post-2020 reform)
+
+UCDP_ADM2_TO_RAION_EN = {
+    # === High-frequency raions (>100 events) ===
+    'Pokrovsk raion': 'Pokrovsk Raion',
+    'Bakhmut raion': 'Bakhmut Raion',
+    'Kramatorsk raion': 'Kramatorsk Raion',
+    'Volnovakha raion': 'Volnovakha Raion',
+    'Polohy raion': 'Polohy Raion',
+    'Kupiansk raion': 'Kupiansk Raion',
+    'Kherson raion': 'Kherson Raion',
+    'Severodonetsk raion': 'Sievierodonetsk Raion',
+    'Svativskyi raion': 'Svatove Raion',
+    'Chuhuiv raion': 'Chuhuiv Raion',
+    'Donetsk raion': 'Donetsk Raion',
+    'Kharkiv raion': 'Kharkiv Raion',
+    'Beryslav raion': 'Beryslav Raion',
+    'Sumy raion': 'Sumy Raion',
+    'Vasylivka raion': 'Vasylivka Raion',
+    'Izyum raion': 'Izium Raion',
+    'Kakhovka raion': 'Kakhovka Raion',
+    'Synelnykove raion': 'Synelnykove Raion',
+    'Horlivka raion': 'Horlivka Raion',
+    'Mariupol raion': 'Mariupol Raion',
+    'Zaporizhzhia raion': 'Zaporizhzhia Raion',
+    'Mykolayiv raion': 'Mykolaiv Raion',
+    'Bucha raion': 'Bucha Raion',
+    'Chernihiv raion': 'Chernihiv Raion',
+    'Nikopol raion': 'Nikopol Raion',
+    'Skadovsk raion': 'Skadovsk Raion',
+    # === Medium-frequency raions (20-100 events) ===
+    'Dnipro raion': 'Dnipro Raion',
+    'Bohodukhiv raion': 'Bohodukhiv Raion',
+    'Shostkynskyi raion': 'Shostka Raion',
+    'Odessa raion': 'Odesa Raion',
+    'Okhtyrska raion': 'Okhtyrka Raion',
+    'Kryvyi Rih raion': 'Kryvyi Rih Raion',
+    'Bashtanka raion': 'Bashtanka Raion',
+    'Melitopol raion': 'Melitopol Raion',
+    'Novhorod-Siverskyi raion': 'Novhorod-Siverskyi Raion',
+    'Nizhyn raion': 'Nizhyn Raion',
+    'Vyshhorod raion': 'Vyshhorod Raion',
+    'Berdyansk raion': 'Berdiansk Raion',
+    'Brovary raion': 'Brovary Raion',
+    'Konotop raion': 'Konotop Raion',
+    'Henichesk raion': 'Henichesk Raion',
+    'Alchevsk raion': 'Alchevsk Raion',
+    'Pavlohrad raion': 'Pavlohrad Raion',
+    'Shchastia raion': 'Shchastia Raion',
+    'Koriukivka raion': 'Koriukivka Raion',
+    'Korosten raion': 'Korosten Raion',
+    'Fastiv raion': 'Fastiv Raion',
+    'Pryluky raion': 'Pryluky Raion',
+    'Zhytomyr raion': 'Zhytomyr Raion',
+    'Izmail raion': 'Izmail Raion',
+    'Starobilsk raion': 'Starobilsk Raion',
+    'Lozova raion': 'Lozova Raion',
+    'Lviv raion': 'Lviv Raion',
+    'Bilhorod-Dnistrovskyi raion': 'Bilhorod-Dnistrovskyi Raion',
+    'Cherkasy raion': 'Cherkasy Raion',
+    'Kamyanske raion': 'Kamianske Raion',
+    'Poltava raion': 'Poltava Raion',
+    'Myrhorod raion': 'Myrhorod Raion',
+    'Kropyvnytskyi raion': 'Kropyvnytskyi Raion',
+    'Khmelnytskyi raion': 'Khmelnytskyi Raion',
+    'Rivne raion': 'Rivne Raion',
+    # === Low-frequency raions (<20 events) ===
+    'Obukhiv raion': 'Obukhiv Raion',
+    'Lutsk raion': 'Lutsk Raion',
+    'Romny raion': 'Romny Raion',
+    'Boryspil raion': 'Boryspil Raion',
+    'Svatove raion': 'Svatove Raion',
+    'Sarnenskyi raion': 'Sarny Raion',
+    'Ternopil raion': 'Ternopil Raion',
+    'Kremenchuk raion': 'Kremenchuk Raion',
+    'Oleksandriia raion': 'Oleksandriia Raion',
+    'Uman raion': 'Uman Raion',
+    'Vinnytsia raion': 'Vinnytsia Raion',
+    'Voznesensk raion': 'Voznesensk Raion',
+    'Rovenky raion': 'Rovenky Raion',
+    'Kalush raion': 'Kalush Raion',
+    'Dovzhansk raion': 'Dovzhansk Raion',
+    'Volodymyr-Volynska raion': 'Volodymyr Raion',
+    'Ivano-Frankivsk raion': 'Ivano-Frankivsk Raion',
+    'Kolomyya raion': 'Kolomyia Raion',
+    'Podilsk raion': 'Podilsk Raion',
+    'Khmilnyk raion': 'Khmilnyk Raion',
+    'Shepetivka raion': 'Shepetivka Raion',
+    'Kamyanets-Podilskyy raion': 'Kamianets-Podilskyi Raion',
+    'Chernivtsi raion': 'Chernivtsi Raion',
+    'Chortkiv raion': 'Chortkiv Raion',
+    'Zolotonosha raion': 'Zolotonosha Raion',
+    'Haisyn raion': 'Haisyn Raion',
+    'Stryi raion': 'Stryi Raion',
+    'Sambir raion': 'Sambir Raion',
+    'Kremenets raion': 'Kremenets Raion',
+    'Mukachevo raion': 'Mukachevo Raion',
+    'Zviahel raion': 'Zviaghel Raion',
+    'Kovel raion': 'Kovel Raion',
+    'Zhmerynka raion': 'Zhmerynka Raion',
+    'Yavoriv raion': 'Yavoriv Raion',
+    # === City municipalities (map to containing raion where applicable) ===
+    'Donetsk City municipality': 'Donetsk Raion',
+    'Horlivka City municipality': 'Horlivka Raion',
+    'Avdiivka city municipality': 'Pokrovsk Raion',
+    'Debaltseve City municipality': 'Horlivka Raion',
+    'Luhansk City municipality': 'Luhansk Raion',
+    'Makiivka City municipality': 'Donetsk Raion',
+    'Mariupol City municipality': 'Mariupol Raion',
+    'Dokuchaev City municipality': 'Volnovakha Raion',
+    'Pervomaisk City municipality': 'Rovenky Raion',
+    'Kadiivka City municipality': 'Alchevsk Raion',
+    'Severodonetsk City municipality': 'Sievierodonetsk Raion',
+    'Snizhne City municipality': 'Donetsk Raion',
+    'Zhdanivka city municipality': 'Horlivka Raion',
+    'Artemivsk city municipality': 'Bakhmut Raion',
+    'Krasnyi Lyman City municipality': 'Kramatorsk Raion',
+    'Yenakiieve City municipality': 'Horlivka Raion',
+    'Kirovsk City municipality': 'Alchevsk Raion',
+    'Selydove city municipality': 'Pokrovsk Raion',
+    'Stakhaniv City municipality': 'Alchevsk Raion',
+    'Druzhkivka City municipality': 'Kramatorsk Raion',
+    'Dzhankoi city municipality': None,  # Crimea - no standard raion
+    'Simferopol City municipality': None,  # Crimea
+    'Rubizhne City municipality': 'Sievierodonetsk Raion',
+    'Alchevsk city municipality': 'Alchevsk Raion',
+    'Odessa City municipality': 'Odesa Raion',
+    # === Pre-2020 raion names (map to post-2020 equivalents) ===
+    'Yasynuvata raion': 'Donetsk Raion',
+    'Popasna raion': 'Sievierodonetsk Raion',
+    'Starobesheve raion': 'Donetsk Raion',
+    'Amvrosiivka raion': 'Donetsk Raion',
+    'Marinka raion': 'Pokrovsk Raion',
+    'Novoaidar raion': 'Sievierodonetsk Raion',
+    'Shaktarsk raion': 'Donetsk Raion',
+    'Novoazovsk raion': 'Mariupol Raion',
+    'Telmanove raion': 'Volnovakha Raion',
+    'Stanychno-Luhansk raion': 'Luhansk Raion',
+    'Slovianoserbsk raion': 'Sievierodonetsk Raion',
+    'Lutuhynskyi raion': 'Luhansk Raion',
+    "Lutuhyns'kyi raion": 'Luhansk Raion',
+    'Krasnodon raion': 'Dovzhansk Raion',
+    'Sloviansk raion': 'Kramatorsk Raion',
+    'Perevalsk raion': 'Alchevsk Raion',
+    'Toretsk raion': 'Bakhmut Raion',
+    'Krasnoarmiiskyi raion': 'Pokrovsk Raion',
+    'Antrasyt raion': 'Rovenky Raion',
+    'Boykivskyi raion': None,  # Cannot map - unclear
+    'Nikolske raion': 'Volnovakha Raion',
+    'Kalmiuske raion': 'Kalmius Raion',
+    'Kostiantynivka raion': 'Kramatorsk Raion',
+    'Samar raion': None,  # Cannot map - unclear (may be Novomoskovsk)
+    'Lysychanska raion': 'Sievierodonetsk Raion',
+    'Bilovodsk raion': 'Starobilsk Raion',
+    'Manhush raion': 'Mariupol Raion',
+    'Dobropil raion': 'Pokrovsk Raion',
+    'Shaktarsk City municipality': 'Donetsk Raion',
+    'Berestyn raion': None,  # Cannot map - unclear
+    'Kreminna raion': 'Sievierodonetsk Raion',
+    'Sverdlovsk raion': 'Dovzhansk Raion',
+    'Velyka Novosilka raion': 'Volnovakha Raion',
+    'Torezka raion': 'Donetsk Raion',
+    'Mezhova raion': 'Synelnykove Raion',
+    'Briankivska raion': 'Alchevsk Raion',
+    'Sheptytskyi raion': None,  # Cannot map - unclear
+    'Bila Tserkva Raion': 'Bila Tserkva Raion',
+    'Pervomaisk Raion': 'Pervomaisk Raion',
+    'Vitovka Raion': 'Mykolaiv Raion',
+    'Zhovtnevyi raion': 'Mykolaiv Raion',
+    'Chaplynka raion': 'Kakhovka Raion',
+    'Troitskiy raion': None,  # Cannot map - unclear
+    # === Crimea raions (limited coverage, map where clear) ===
+    'Yevpatoria raion': None,  # Crimea
+    'Saky raion': None,  # Crimea
+    'Yalta raion': None,  # Crimea
+    'Feodosia raion': None,  # Crimea
+    'Kirovske raion': None,  # Crimea
+    'Simferopol Raion': None,  # Crimea
+    'Nakhimov Raion': None,  # Sevastopol
+    'Bakhchysarai raion': None,  # Crimea
+    'Rozdolne raion': None,  # Crimea
+    'Kerchenska raion': None,  # Crimea
+    'Bilohirsk raion': None,  # Crimea
+}
+
+
 # Ukrainian raion names → English translations
 # Source: https://en.wikipedia.org/wiki/Raions_of_Ukraine (post-2020 reform: 136 raions)
 
